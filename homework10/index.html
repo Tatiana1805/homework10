@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&display=swap" rel="stylesheet">
+    <title>MODA</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-block">
+            <div class="logo">moda</div>
+        </div>
+        <nav class="header-nav">
+            <a href="#" class="header-nav__section">
+                <img class="nav-img" src="img/search.svg">
+            </a>
+            <a href="#" class="header-nav__section">
+                <img class="nav-img" src="img/heart.svg">
+            </a>
+            <a href="#" class="header-nav__section">
+                <img class="nav-img" src="img/user.svg">
+            </a>
+            <a href="#" class="header-nav__section">
+                <img class="nav-img" src="img/shopping.svg">
+            </a>
+        </nav>
+    </header>
+    <main>
+        <div id="error"></div>
+        <div class="main-img">
+            <h1 class="main-img__tittle">
+                Эксклюзивная коллекция со скидкой до 40%
+            </h1>
+            <a href="#" class="main-img__button">Подробнее</a>
+        </div>
+        <section class="main-product">
+            <div>
+                    <h2>Новинки</h2>
+                    <div class="products"></div>
+                    <button class="pushProducts">Загрузить ещё</button>
+            </div>
+        </section>
+        <form class="addProduct">
+            <h2>Добваить продукт</h2>
+            <div class="formSumbit">
+                <input type="text" class="title" placeholder="Title" required>
+                <input type="number" class="priceProduct" placeholder="Price" step="0.01" required>
+                <input type="text" class="description" placeholder="Description" required>
+                <input type="text" class="image" placeholder="Image URL" required>
+                <input type="text" class="category" placeholder="Category" required>
+                <button type="submit">Загрузить</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="footer-conteiner">
+            <div>
+                <div class="logo-footer">moda</div>
+            </div>
+            <div class="footer-ul">
+                <ul>Информация
+                    <li><a href="#">Мой аккаунт</a></li>
+                    <li><a href="#">Логин</a></li>
+                    <li><a href="#">Моя корзина</a></li>
+                    <li><a href="#">Мои пожелания</a></li>
+                    <li><a href="#">Проверка</a></li>
+                </ul> 
+                <ul>Сервисы
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Карьера</a></li>
+                    <li><a href="#">Информация о доставки</a></li>
+                    <li><a href="#">Политика конфиденциальности</a></li>
+                    <li><a href="#">Условия</a></li>
+                </ul>
+                <ul>Подробнее
+                    <li><a href="#">Команда</a></li>
+                    <li><a href="#">Работа</a></li>
+                    <li><a href="#">Пресса</a></li>
+                </ul>
+            </div>
+            <div class="copyright">Copyright 2019 MODA, Inc. Terms & Privacy</div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
